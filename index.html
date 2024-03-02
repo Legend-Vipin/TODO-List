@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Canteen App</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Canteen App</h1>
+
+    <div>
+      <label for="tableNumber">select</label>
+      <select id="tableNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div>
+      <label for="quantity">foodItem Quantity</label>
+      <select  id="quantity">
+        <option selected >Choose an option...</option>
+        <option value="1">1 item</option>
+      </select>
+    </div>
+    <div>
+      <label for="foodCategory">Food Category:</label>
+      <select id="foodCategory">
+        <option value="starter">Starter</option>
+        <option value="mainCourse">Main Course</option>
+        <option value="dessert">Dessert</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="foodItem">Food Item:</label>
+      <select id="foodItem">
+        <!-- Options will be dynamically added based on the selected category -->
+      </select>
+    </div>
+
+    <button onclick="addToCart()">Add to Cart</button>
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
