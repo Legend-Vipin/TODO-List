@@ -34,10 +34,11 @@ function renderTodos() {
 }
 
 function completeTodo(index) {
-    const timestamp = new Date().toLocaleString();
-    todos[index] = `${todos[index]} (Completed on ${timestamp})`;
-
-    renderTodos();
+    if (!todos[index].includes("(Completed on")) {
+        const timestamp = new Date().toLocaleString();
+        todos[index] = `${todos[index]} (Completed on ${timestamp})`;
+        renderTodos();
+    }
 }
 
 function removeTodo(index) {
