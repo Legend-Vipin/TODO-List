@@ -2,6 +2,9 @@
 
 This is a simple TODO List application that helps you manage your tasks efficiently.
 
+<!--
+This section outlines the key features of the TODO-List application.
+-->
 ## Features
 
 - Add new tasks
