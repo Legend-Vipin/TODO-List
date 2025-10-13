@@ -5,7 +5,7 @@ To get started with this TODO List application:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/TODO-List.git
+git clone git clone https://github.com/Legend-Vipin/TODO-List
 ```
 
 2. Navigate to the project directory:
